@@ -13,7 +13,7 @@ export default function Product() {
 
   const cargarProductos = async () => {
     try {
-      const res = await axios.get("functional-melba-alejandroquintero-df869b19.koyeb.app/api/productos");
+      const res = await axios.get("https://functional-melba-alejandroquintero-df869b19.koyeb.app/api/productos");
       setProductos(res.data);
     } catch (error) {
       console.error("Error al cargar productos:", error);
@@ -27,7 +27,7 @@ export default function Product() {
     }
 
     try {
-      const res = await axios.post("functional-melba-alejandroquintero-df869b19.koyeb.app/api/productos", {
+      const res = await axios.post("https://functional-melba-alejandroquintero-df869b19.koyeb.app/api/productos", {
         nombre,
         precio,
       });
